@@ -110,7 +110,7 @@ def start():
     app.register_blueprint(csvm_bp,url_prefix='/csvengine')
     
     
-    app.run(debug=True, port=port)
+    app.run(debug=True, port=port, host='0.0.0.0')
 
 if __name__ == "__main__":
     start()
